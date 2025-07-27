@@ -4,7 +4,7 @@ import sqlalchemy.orm as orm
 from src.infrastructure.database import Base
 
 
-class OlxAccounts(Base):
+class OlxAccount(Base):
     __tablename__ = "olax_accounts"
 
     id: orm.Mapped[int] = orm.mapped_column(sa.Integer, primary_key=True)
